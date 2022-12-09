@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  # https://github.com/spritsail/fivem
+  fivem:
+    build: .
+    image: fivem
+    container_name: fivem
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    env_file: .env
+    environment:
+      - NO_DEFAULT_CONFIG=1
+      - NO_LICENSE_KEY=1
+    ports:
+      - 40120:40120
+      - 30120:30120
+      - 30120:30120/udp
+    volumes:
+      - ./config:/config
+      - ./txData:/txData

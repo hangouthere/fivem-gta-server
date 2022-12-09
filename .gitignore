@@ -1,0 +1,20 @@
+# Ignore environment/local variables
+.env
+
+# Ignore txData store
+txData
+
+# Ignore private/local config data and cache
+config/details.cfg
+config/license.cfg
+config/rcon.cfg
+config/proxy.cfg
+config/cache
+
+# Ignore default FiveM Resources
+config/resources/\[gamemodes\]
+config/resources/\[gameplay\]
+config/resources/\[local\]
+config/resources/\[managers\]
+config/resources/\[system\]
+config/resources/\[test\]

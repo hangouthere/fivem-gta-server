@@ -1,0 +1,40 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": true,
+  "explorer.fileNesting.patterns": {
+    "README.md": "package*, .yarn.installed, *.lock, *config.json, *config.ts, *config.js, .prettierrc*, .npm*, .editorconfig, .gitignore, .eslint*",
+    "docker-compose.yml": "docker-compose.*.yml, .docker*, Dockerfile",
+    "*.js": "$(capture).js.map, $(capture)_*.js",
+    "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx",
+    "*.ts": "$(capture).ts.map, $(capture)_*.ts",
+    "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx"
+  },
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".parcel-*": true,
+    ".vscode": true,
+    ".env": true,
+    "txData": true,
+    "**/[[]gamemodes[]]": true,
+    "**/[[]gameplay[]]": true,
+    "**/[[]local[]]": true,
+    "**/[[]managers[]]": true,
+    "**/[[]system[]]": true,
+    "**/[[]test[]]": true,
+    "**/cache": true,
+    "**/_dist": true,
+    "**/node_modules": true,
+    "**/details.cfg": true,
+    "**/license.cfg": true,
+    "**/proxy.cfg": true,
+    "**/rcon.cfg": true
+  },
+  "explorerExclude.backup": {},
+  "explorerExclude.showPicker": true
+}

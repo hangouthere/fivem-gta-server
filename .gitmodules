@@ -1,0 +1,3 @@
+[submodule "config/resources/[sandbox]"]
+	path = config/resources/[sandbox]
+	url = git@github.com:nerdfoundry/fivem-gta-mod-sandbox.git
